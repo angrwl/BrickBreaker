@@ -1,5 +1,4 @@
 
-// https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript/Move_the_ball
 // These are global variables accessed by any function
 
 let canvas = document.getElementById('myCanvas'); //creates a variable canvas in JS under the id name of myCanvas
@@ -27,6 +26,7 @@ let paddleHeight = 35;
 let paddleWidth = 170;
 let paddleX = (canvas.width-paddleWidth)/2; //centre the paddle on the canvas
 let paddleY = canvas.height - paddleHeight; // to make sure paddle is at the bottom
+
 var rightPressed = false; //boolean variables telling JS whether a key is pressed or not
 var leftPressed = false;  // for both right and left key
 
@@ -51,7 +51,7 @@ function keyUpHandler(e) {
         leftPressed = false;
     }
 }
-
+// for playing with mouse
 function mouseMoveHandler(e) {
     var relativeX = e.clientX - canvas.offsetLeft;
     if(relativeX > 0 && relativeX < canvas.width) {
