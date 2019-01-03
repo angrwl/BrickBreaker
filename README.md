@@ -11,3 +11,7 @@ The user is given *3 Lives* at the start of the game and objective of the game i
 If the speed of the ball is **too fast**, it can be made slower by changing the number in `setInterval(draw,5)` 
 function in my *simpleGame.js* file to a higher number (i.e. try 10). 
 
+https://angrwl.github.io/BrickBreaker/ 
+
+For some reason, the game **DOES NOT** load properly in this link above - hence I will recommend you to download the whole folder and open the `index.html` file using **Google Chrome**. 
+
