@@ -1,4 +1,5 @@
 
+
 // These are global variables accessed by any function
 
 let canvas = document.getElementById('myCanvas'); //creates a variable canvas in JS under the id name of myCanvas
@@ -202,11 +203,13 @@ function draw() {
   drawBricks();
   collisionDetection();
   // requestAnimationFrame(draw);
+  window.requestAnimationFrame(draw,1);
   }
 
 let pause = document.getElementById('pause');  // allows you to pause the game
 pause.onclick = function () {
   alert('You have paused the gam\nClick OK to resume with the game');
 }
-setInterval(draw,5); // execute the draw function every 5 milliseconds
+//setInterval(draw,5); // execute the draw function every 5 milliseconds
 // draw();  //this is useful if I uncomment the requestAnimationFrame(draw) inside draw
+window.requestAnimationFrame(draw,1);
